@@ -1,0 +1,122 @@
+/* App.css */
+
+/* Стили для всего тела */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('/images/background.jpg'); /* Укажите путь к фоновому изображению */
+  background-size: cover; /* Фон растягивается по размеру экрана */
+  background-position: center; /* Центрирование изображения */
+  background-repeat: no-repeat; /* Запрет на повторение изображения */
+  min-height: 100vh; /* Обеспечивает покрытие всей высоты экрана */
+}
+
+/* Стили для контейнера приложения */
+.App {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85); /* Полупрозрачный белый фон */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: 20px auto; /* Центрирует основной контент */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляет легкую тень для выделения */
+}
+
+/* Логотип приложения */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Анимация вращения логотипа */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Стили для заголовка */
+.App-header {
+  background-color: rgba(40, 44, 52, 0.9); /* Темный фон с прозрачностью */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Ссылки */
+.App-link {
+  color: #61dafb;
+}
+
+/* Стили для карточек */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляет тень */
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон для карточки */
+  border-radius: 8px; /* Скругленные углы карточки */
+  overflow: hidden;
+}
+
+/* Изображение в карточке */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 8px; /* Скругление углов изображения */
+  border-top-right-radius: 8px;
+}
+
+/* Заголовок карточки */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Текст карточки */
+.card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Кнопка для бронирования */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Навигационная панель */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.85); /* Полупрозрачный белый фон */
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Стили для текста заголовка */
+h2 {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
